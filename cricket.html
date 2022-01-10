@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .field:hover img {
+            transform: rotate(-50deg);
+            transform-origin: top right;
+        }
+
+        img {
+            width: 25%;
+            transition: transform .2s ease-in;
+        }
+
+        .field {
+            border: 2px solid black;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: rgb(211, 205, 205);
+            position: relative;
+            left: 462px;
+            bottom: 80px;
+            transition: transform .5s ease-out .3s;
+        }
+
+        .field:hover .ball {
+            transform: translate(900px, -400px);
+        }
+
+        .big-field {
+            background-image: url(images/istockphoto-1176722220-170667a.jpg);
+            background-repeat: no-repeat;
+            background-size: 1500px 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big-field">
+        <div class="field">
+            <img src="images/bat.png" alt="">
+            <div class="ball"></div>
+        </div>
+    </div>
+</body>
+
+</html>
